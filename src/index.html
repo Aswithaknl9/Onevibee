@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+   
+</head>
+<body>
+    
+    <div class="background">
+        <!-- Navbar -->
+        <header class="navbar">
+            <nav class="nav-container">
+                <!-- Logo -->
+                <img src="assets/logo.png" alt="logo" class="logo">
+                
+                <!-- Desktop Menu -->
+                <ul class="nav-menu">
+                    <li><a href="index.html" onclick="navigateTo('index.html', event)">Home</a></li>
+                    <li><a href="about.html" onclick="navigateTo('about.html', event)">About Us</a></li>
+                    <li><a href="Products.html" onclick="navigateTo('products.html', event)">Products</a></li>
+                    <li><a href="Referrals.html" onclick="navigateTo('referrals.html', event)">Referrals</a></li>
+                    <li><a href="Contact.html" onclick="navigateTo('contact.html', event)">Contact Us</a></li>
+                </ul>
+                
+                <!-- Buttons -->
+                <div class="nav-buttons">
+                    <a href="https://customer.onevibee.com/user/login" class="login-btn">Login</a>
+                    <a href="https://customer.onevibee.com/user/register" class="register-btn">Pre-Registration</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="mobile-menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html" onclick="navigateTo('index.html', event); toggleMenu();">Home</a>
+                <a href="about.html" onclick="navigateTo('about.html', event); toggleMenu();">About Us</a>
+                <a href="Products.html" onclick="navigateTo('products.html', event); toggleMenu();">Products</a>
+                <a href="Referrals.html" onclick="navigateTo('referrals.html', event); toggleMenu();">Referrals</a>
+                <a href="Contact.html" onclick="navigateTo('contact.html', event); toggleMenu();">Contact Us</a>
+            </div>
+        </header>
+        
+
+        <!-- Home Page Section -->
+        <section class="home-section">
+            <div class="relative">
+                <div class="relative flex text-white text-start">
+                    <div class="flex justify-center pt-6">
+                        <button class="re-btn">
+                            <span class="highlight">Hurry Up!</span>
+                            <div class="text-container">
+                                <span class="register-text">Register Now</span>
+                                <span class="small-text">Before Closing</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="countdown-timer">
+                <div class="timer-item">
+                    <div class="timer-number" id="days">00</div>
+                    <div class="timer-label">DAYS</div>
+                </div>
+                <div class="timer-item">
+                    <div class="timer-number" id="hours">00</div>
+                    <div class="timer-label">HOURS</div>
+                </div>
+                <div class="timer-item">
+                    <div class="timer-number" id="minutes">00</div>
+                    <div class="timer-label">MINUTES</div>
+                </div>
+                <div class="timer-item">
+                    <div class="timer-number" id="seconds">00</div>
+                    <div class="timer-label">SECONDS</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container flex-container">
+            <!-- User Count Section -->
+            <div class="user-section">
+                <img src="assets/groupusers.png" alt="users" class="user-image">
+                <div class="user-count">
+                    <div class="user-group">
+                        <div class="user-item"><div class="user-number">0</div></div>
+                        <div class="user-item"><div class="user-number">0</div></div>
+                    </div>
+                    <div class="user-group">
+                        <div class="user-item"><div class="user-number">0</div></div>
+                        <div class="user-item"><div class="user-number">2</div></div>
+                    </div>
+                    <div class="user-group">
+                        <div class="user-item"><div class="user-number">4</div></div>
+                        <div class="user-item"><div class="user-number">7</div></div>
+                    </div>
+                </div>
+                <div class="user-label">Users</div>
+            </div>
+        
+            <!-- Card Slider Section -->
+            <div class="slider">
+                <div class="cards-wrapper">
+                    <div class="card1">
+                        <div class="price-tag">
+                            <span class="cross-price">₹1299</span>
+                            <span class="price">₹499</span>
+                        </div>
+                        <img src="assets/pinkcard.png" alt="Coupon Card">
+                        <h3>Coupon Card</h3>
+                    </div>
+            
+                    <div class="card1">
+                        <div class="price-tag">
+                            <span class="cross-price">₹2500</span>
+                            <span class="price">₹499</span>
+                        </div>
+                        <img src="assets/greencard.png" alt="Safiss Card">
+                        <h3>Safiss Card</h3>
+                    </div>
+            
+                    <div class="card1">
+                        <div class="price-tag">
+                            <span class="cross-price">₹1999</span>
+                            <span class="price">₹699</span>
+                        </div>
+                        <img src="assets/blackcard.png" alt="Business Bazar">
+                        <h3>Business Bazar</h3>
+                    </div>
+            
+                    <div class="card1">
+                        <div class="price-tag">
+                            <span class="cross-price">₹999</span>
+                            <span class="price">₹499</span>
+                        </div>
+                        <img src="assets/bluecard.png" alt="Ambition X Card">
+                        <h3>Ambition X Card</h3>
+                    </div>
+            
+                    <div class="card1">
+                        <div class="price-tag">
+                            <span class="cross-price">₹1999</span>
+                            <span class="price">₹999</span>
+                        </div>
+                        <img src="assets/skybluecard.png" alt="Health Card">
+                        <h3>Health Card</h3>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Logo">
+                    </div>
+                </div>
+                <div class="footer-column footer-item">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    
+                    <p>Flat no - 404, Sri Main Sai Kalan Arcade, X Road, Balaji Nagar, Miyapur, Hyderabad, Telangana 500049</p>
+                </div>
+                <div class="footer-column footer-contact">
+                    <div class="footer-item">
+                        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                        
+                        <p>+91 9865201347</p>
+                    </div>
+                    <div class="footer-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <p>support@onevibe.com</p>
+                    </div>
+                </div>
+                <div class="footer-column footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Products</a>
+                <a href="#">Referrals</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="footer-policies">
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund & Cancellation Policy</a>
+                <a href="#">Shipping Policy</a>
+            </div>
+
+            <div class="footer-copyright">
+                © 2024 onevibe.com. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+    <script>
+        
+        function startCountdown() {
+            const targetDate = new Date("2025-04-01T00:00:00").getTime();
+
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const difference = targetDate - now;
+
+                if (difference <= 0) {
+                    clearInterval(interval);
+                    return;
+                }
+
+                document.getElementById("days").textContent = String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, "0");
+                document.getElementById("hours").textContent = String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0");
+                document.getElementById("minutes").textContent = String(Math.floor((difference / (1000 * 60)) % 60)).padStart(2, "0");
+                document.getElementById("seconds").textContent = String(Math.floor((difference / 1000) % 60)).padStart(2, "0");
+            }
+
+            updateCountdown();
+            const interval = setInterval(updateCountdown, 1000);
+        }
+
+        document.addEventListener("DOMContentLoaded", startCountdown);
+    </script>
+   
+</body>
+</html>
