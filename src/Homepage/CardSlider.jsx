@@ -48,7 +48,7 @@ const CardSlider = () => {
   const activeFeatures = useMemo(() => featuresList[activeCard] || [], [activeCard]);
 
   return (
-    <div className="py-10 max-w-5xl mx-auto flex flex-col items-center">
+    <div className="py-10 max-w-5xl mx-auto flex flex-col items-center mt-20 md:mt-0 ">
       <div className="w-full flex flex-col md:flex-row items-center gap-6">
         <div className="w-full">
           <Swiper

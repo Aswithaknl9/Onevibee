@@ -10,7 +10,7 @@ const Home = () => {
     <div className="relative">
       
       {/* Content */}
-      <div className="relative flex text-white text-start lg:top-[152px] top-[260px]">
+      <div className="relative flex text-white text-start lg:top-[152px] top-[280px]">
         {/* Register Now Button */}
         <div className="flex justify-center pt-6">
           <button className="relative flex items-center overflow-hidden animate-fadeLeft">
