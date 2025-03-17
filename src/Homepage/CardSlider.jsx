@@ -50,9 +50,6 @@ const CardSlider = () => {
   return (
     <div className="py-10 max-w-5xl mx-auto flex flex-col items-center">
       <div className="w-full flex flex-col md:flex-row items-center gap-6">
-        <div className="w-full flex justify-center">
-          <UserCounter />
-        </div>
         <div className="w-full">
           <Swiper
             modules={[Autoplay, Pagination]}

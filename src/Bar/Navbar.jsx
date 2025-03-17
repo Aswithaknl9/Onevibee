@@ -25,12 +25,12 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="flex space-x-2">
-          <Link to="https://customer.onevibee.com/user/login">
+          <Link to="https://onevibee.com/preregistration/user/login">
             <button className="px-4 py-2 bg-white text-transparent bg-clip-text bg-gradient-to-r from-[#E27214] via-[#E20C59] to-[#402B75] border border-[#E20C59] rounded-md">
               Login
             </button>
           </Link>
-          <Link to="https://customer.onevibee.com/user/register">
+          <Link to="https://onevibee.com/preregistration/user/register">
             <button className="px-4 py-2 text-white rounded-lg bg-gradient-to-r from-[#E27214] via-[#E20C59] to-[#402B75] hover:opacity-90 transition">
               Pre-Registration
             </button>
